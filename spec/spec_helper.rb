@@ -16,6 +16,9 @@
 # limitations under the License.
 #++
 
+require 'coveralls'
+Coveralls.wear!
+
 ENV['CASSANDRA_HOST'] ||= '127.0.0.1'
 
 require 'bundler/setup'
