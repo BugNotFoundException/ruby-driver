@@ -51,6 +51,9 @@ unless ENV['COVERAGE'] == 'no' || RUBY_ENGINE == 'rbx'
   SimpleCov.start do
     command_name 'RSpec'
   end
+
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 
 require 'cassandra'
