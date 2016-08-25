@@ -25,6 +25,7 @@ group :test do
   gem 'minitest', '< 5.0.0'
   gem 'ansi'
   gem 'delorean'
+  gem 'codecov'
 end
 
 group :docs do
